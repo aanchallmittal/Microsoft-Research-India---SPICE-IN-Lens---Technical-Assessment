@@ -1,0 +1,126 @@
+{
+  "id": "dc0e67a5-e5bb-4880-98ef-9172e9361d9c",
+  "version": "2.0",
+  "name": "Microsoft Reseach India ",
+  "url": "https://www.gpo.gov/",
+  "tests": [{
+    "id": "c73bba3e-ed06-4e99-92e2-931aa1dd2aec",
+    "name": "latest pdf retrieval.side",
+    "commands": [{
+      "id": "84945065-129a-4260-96c3-5ad8053908e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.gpo.gov",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bfb6b5b5-03aa-4e9a-9971-5a9cff436d3b",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5072a9ef-109b-4c9c-a9d3-207404facbd1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-7",
+      "targets": [
+        ["css=.col-md-7", "css:finder"],
+        ["xpath=//div[@id='boxlet']/div/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aefd70c8-8bee-4acb-a890-71cd01f06dad",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd966be0-51a4-410d-8af1-c7144fc08c92",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "94e1e302-b00a-4d12-bfd8-e2a0201d6728",
+      "comment": "",
+      "command": "pause",
+      "target": "2000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60b4bcef-daae-47e3-b039-44694c98fdc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-header",
+      "targets": [
+        ["css=.navbar-header", "css:finder"],
+        ["xpath=//div[@id='cphHeader_T97BC6AE4028_Col00']/nav/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05bb1188-56df-4470-9d2e-20de639a51a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#nav-icon4 > span:nth-child(3)",
+      "targets": [
+        ["css=#nav-icon4 > span:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='nav-icon4']/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c124dd41-8520-4567-96ae-8244d680422d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-form",
+      "targets": [
+        ["css=.navbar-form", "css:finder"],
+        ["xpath=//div[@id='navbar-menu']/ul[2]/li", "xpath:idRelative"],
+        ["xpath=//ul[2]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Search\n ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0cb4a698-af37-42bf-9a0e-4e1080f76556",
+      "comment": "",
+      "command": "click",
+      "target": "id=srch-term",
+      "targets": [
+        ["id=srch-term", "id"],
+        ["name=srch-term", "name"],
+        ["css=#srch-term", "css:finder"],
+        ["xpath=//input[@id='srch-term']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar-menu']/ul[2]/li/div/input", "xpath:idRelative"],
+        ["xpath=//li/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccbb499a-d74f-4a62-a33b-9f94388d977c",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(3) .featurette-heading",
+      "targets": [
+        ["css=a:nth-child(3) .featurette-heading", "css:finder"],
+        ["xpath=//div[@id='boxlet']/div/div/div/a/div/div/h2", "xpath:idRelative"],
+        ["xpath=//a/div/div/h2", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "240da649-4214-4b1e-a242-760084365fde",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c73bba3e-ed06-4e99-92e2-931aa1dd2aec"]
+  }],
+  "urls": ["https://www.gpo.gov/"],
+  "plugins": []
+}
